@@ -110,7 +110,7 @@ a {
   }
 
    /****** title/subtitle ***********/
-    .container-hero {
+.container-hero {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -160,9 +160,23 @@ a {
     line-height: normal;
 }
 
-container-button i {
-    width: 30px;
-    height: 30px;
+.container-button:hover {
+    background-color: var(--filter-bg-color);
+}
+
+.container-button i {
+    font-size: 22px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.info p {
+    margin: 0;
 }
 
 
