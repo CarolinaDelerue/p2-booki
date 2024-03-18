@@ -48,6 +48,7 @@ a {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    width: 100%
 }
 
 .card img {
@@ -122,6 +123,10 @@ a {
     display: flex;
     flex-direction: column;
     gap: 8px;   
+}
+
+.title-subtitle h1 {
+    margin-top: 30px;
 }
 
 .subtitle {
@@ -251,6 +256,58 @@ form input {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.hebergements-cards {
+    display: grid;
+    overflow: hidden; 
+    gap: 30px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 30px;
+}
+
+.hebergements-card a .card {
+    background-color: red;
+    width: 250px;
+    height: 207px; 
+}
+
+.hebergements-cards img {
+    width: 250px;
+    height: 124px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+.button-more {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    margin-top: 30px;
 }
 
 /****** Populaires ***********/
