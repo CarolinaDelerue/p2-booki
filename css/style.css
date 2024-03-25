@@ -47,7 +47,7 @@ a {
 .card {
     background-color: white;
     border-radius: 20px;
-    /* padding: 5px; */
+    padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     width: 100%
 }
@@ -399,14 +399,6 @@ form input {
     border-top-right-radius: 20px;
 }
 
-.activities-cards .card-content {
-    width: 100%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
 
 .activities-cards .card-title {
     padding: 20px 19px;
@@ -482,6 +474,44 @@ form input {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activities {
+        width: 100%;
+        height: 390px;
+        margin-top: 30px;
+        padding: 30px
+    }
+    .activities-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .activities-cards {
+        display: flex;
+        overflow: hidden;
+        gap: 30px;
+        margin-top: 30px;
+        background-color: white;
+    }
+
+    .activities-cards .card {
+        width: 194px;
+        height: 270px;
+        padding-bottom: 15px;
+    }
+
+    .activities-cards img {
+        width: 193px;
+        height: 200px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .activities-cards .card-title {
+        padding: 20px 19px;
+
     }
 }
 
