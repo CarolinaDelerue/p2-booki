@@ -13,6 +13,10 @@
     color: var(--main-color);
 }
 
+html {
+    width: 100%;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -48,8 +52,8 @@ a {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    width: 100%
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+    width: 100%;
 }
 
 .card img {
@@ -76,6 +80,11 @@ a {
 form input {
     border: none;
     outline: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
 }
 
 
@@ -268,7 +277,6 @@ form input {
 
 .hebergements-cards {
     display: grid;
-    overflow: hidden;
     gap: 30px;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     margin-top: 30px;
@@ -370,8 +378,10 @@ form input {
 .activities {
     width: 100%;
     margin-top: 35px;
-    padding: 30px
 }
+
+
+
 .activities-title {
     display: flex;
     justify-content: space-between;
@@ -380,20 +390,19 @@ form input {
 
 .activities-cards {
     display: flex;
-    overflow: hidden;
     gap: 30px;
     margin-top: 30px;
-    background-color: white;
+    width: 100%;
 }
 
 .activities-cards .card {
-    width: 297px;
+    width: 100%;
     height: 439px;
     padding-bottom: 15px;
 }
 
 .activities-cards img {
-    width: 297px;
+    width: 297.5px;
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -406,6 +415,8 @@ form input {
 }
 
 /* Footer */
+
+
 .footer-container {
     display: flex;
     flex-direction: row;
@@ -420,7 +431,6 @@ form input {
     align-items: flex-start;
     gap: 15px;
     flex: 1 0 0;
-    align-self: stretch;
     cursor: pointer;
 }
 
@@ -482,6 +492,8 @@ form input {
         margin-top: 30px;
         padding: 30px
     }
+
+
     .activities-title {
         display: flex;
         justify-content: space-between;
@@ -490,16 +502,15 @@ form input {
 
     .activities-cards {
         display: flex;
-        overflow: hidden;
         gap: 30px;
         margin-top: 30px;
-        background-color: white;
     }
 
     .activities-cards .card {
         width: 194px;
         height: 270px;
         padding-bottom: 15px;
+        background-color: transparent;
     }
 
     .activities-cards img {
@@ -518,6 +529,22 @@ form input {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column-reverse;
+
+        justify-content: space-between;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .populaires-cards a {
+        width: 100%;
+    }
+
     .style-form {
         display: flex;
         align-items: center;
@@ -526,6 +553,10 @@ form input {
         gap: 24px;
         border: 1px solid var(--main-bg-color);
         border-radius: 15px;
+    }
+
+    .hebergements-cards a {
+        width: 100%;
     }
 
     .hebergements-cards {
@@ -551,12 +582,29 @@ form input {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .hebergements-cards {
-        display: flex;
-        overflow: hidden;
-        gap: 15px;
-        margin-top: 20px;
-        background-color: inherit;
+    .activities {
+        width: 100%;
+        height: 390px;
+        margin-top: 30px;
     }
+
+    .activities-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .activities-cards .card  {
+        width: 100%;
+    }
+
+    .activities-cards img {
+        width: 100%;
+        height: 200px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
 
 }
