@@ -30,7 +30,6 @@ body {
 }
 
 h1 {
-    font-family: Raleway;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -101,8 +100,6 @@ form input {
     margin-top: 16px;
     margin-left: 50px;
     margin-right: 50px;
-
-
   }
 
   .nav-links li {
@@ -122,6 +119,7 @@ form input {
   }
 
    /****** title/subtitle ***********/
+
 .container-hero {
     display: flex;
     flex-direction: column;
@@ -144,16 +142,17 @@ form input {
     margin: 0px;
 }
 
+
   /****** search bar ***********/
 
 .title-filter {
     text-align: center;
-    font-family: Raleway;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
+
 .container-filter {
     display: flex;
     flex-direction: row;
@@ -165,6 +164,7 @@ form input {
     flex-direction: row;
     gap: 15px;
 }
+
 .container-button {
     display: flex;
     flex-direction: row;
@@ -175,7 +175,6 @@ form input {
     gap: 10px;
     padding: 15px 19px;
     background-color: white;
-    font-family: Raleway;
     font-size: 17px;
     font-style: normal;
     font-weight: 700;
@@ -260,6 +259,8 @@ form input {
 }
 
 /****** Hebergements ***********/
+
+
 .hebergements {
     width: 65%;
 }
@@ -322,6 +323,7 @@ form input {
 }
 
 /****** Populaires ***********/
+
 .populaires {
     width: 32%;
 }
@@ -524,11 +526,35 @@ form input {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    body {
+        background-color: var(--Grey, #F2F2F2);
+    }
+
+    .container-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 25px;
+        border: 2px solid;
+        border-color: var(--filter-bg-color);
+        gap: 10px;
+        padding: 15px 19px;
+        background-color: white;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+    }
+
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column-reverse;
-
         justify-content: space-between;
+    }
+
+    .hebergements-and-populaires section {
+        background-color: white;
     }
 
     .populaires-cards {
@@ -599,6 +625,12 @@ form input {
         height: 200px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--main-bg-color);
+        margin-top: 35px;
     }
 
 
