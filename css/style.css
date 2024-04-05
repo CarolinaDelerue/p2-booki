@@ -554,11 +554,28 @@ header {
     }
 
     header {
-        padding: 20px;
+        padding: 30px;
+    }
+
+    .logo img {
+        margin: 30px;
+    }
+
+    .header-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .nav-links {
-        column-gap: 28px;
+        display: flex; /* Utiliser flexbox */
+        justify-content: center; /* Centrer horizontalement les éléments */
+        list-style: none; /* Supprimer les puces de la liste */
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin-right: 15px; /* Espacement entre les éléments li */
     }
 
     .container-hero {
@@ -588,10 +605,6 @@ header {
         justify-content: space-between;
         padding: 0;
     }
-
-    /* .hebergements-and-populaires section {
-        background-color: white;
-    } */
 
     .populaires {
         background-color: var(--main-bg-color);
