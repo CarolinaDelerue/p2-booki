@@ -223,10 +223,10 @@ header {
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    width: 100%;
+    /* width: 100%;
     overflow: hidden;
-    white-space: nowrap; /* Empêcher le texte de se retourner à la ligne */
-    text-overflow: ellipsis; /* Ajouter une ellipse à la fin du texte tronqué */
+    white-space: nowrap;
+    text-overflow: ellipsis; */
 }
 
 .style-form i.fa-location-dot {
@@ -640,6 +640,17 @@ header {
         gap: 24px;
         border: 1px solid var(--main-bg-color);
         border-radius: 15px;
+    }
+
+
+    #site-search {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     .style-form button {
