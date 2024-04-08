@@ -223,6 +223,10 @@ header {
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap; /* Empêcher le texte de se retourner à la ligne */
+    text-overflow: ellipsis; /* Ajouter une ellipse à la fin du texte tronqué */
 }
 
 .style-form i.fa-location-dot {
@@ -570,14 +574,14 @@ header {
     }
 
     .nav-links {
-        display: flex; /* Utiliser flexbox */
-        justify-content: center; /* Centrer horizontalement les éléments */
-        list-style: none; /* Supprimer les puces de la liste */
+        display: flex;
+        justify-content: center;
+        list-style: none;
         padding: 0;
     }
 
     .nav-links li {
-        margin-right: 15px; /* Espacement entre les éléments li */
+        margin-right: 15px;
     }
 
     .container-hero {
@@ -677,8 +681,8 @@ header {
     }
 
     .container-filter-button {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .activities {
