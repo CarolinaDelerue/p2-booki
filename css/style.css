@@ -223,10 +223,6 @@ header {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  /* width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis; */
 }
 
 .style-form i.fa-location-dot {
@@ -431,6 +427,7 @@ header {
   height: 380px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  object-fit: cover;
 }
 
 .activities-cards .card-title {
@@ -540,6 +537,7 @@ header {
     height: 200px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
   }
 
   .activities-cards .card-title {
@@ -711,6 +709,7 @@ header {
     height: 200px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
   }
 
   .footer-container {
